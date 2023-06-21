@@ -1,0 +1,183 @@
+/*
+Light Pink #EDAFB8
+Champagne Pink #F7E1D7
+Timberwolf #DEDBD2
+Cambridge Blue #B0C4B1 - looks green
+Deep Space Sparkle #4A5759
+Almost White #F7FFF7
+Rich Black #080708
+Yellow #FFE66D
+Dark Blue #2F3061
+*/
+
+
+/*Global styles
+-----------------------------------7*/
+html {
+  box-sizing: border-box;
+}
+  *:before, *:after {
+  box-sizing: inherit;
+}
+  body {
+  color: #4A5759; /*Deep Space Sparkle*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+}
+a{
+  color: blue;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #2F3061;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom-style: none;
+
+}
+/*Profile
+-----------------------------------7*/
+header{
+  background: #4F9678;
+  color: #080708;
+}
+
+
+
+/*Projects
+-----------------------------------7*/
+.Projects {
+  background: #F7E1D7;
+}
+.Projects a {
+  color: #2F3061;
+}
+.Projects .btn {
+  color: #F7FFF7;
+  background: #2F3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.Projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+margin-top: 0;
+}
+
+
+/*Work experience
+-----------------------------------7*/
+.work-experience {
+  background: #DEDBD2;
+}
+
+
+
+/*Education
+-----------------------------------7*/
+.Education {
+  /* background: #abdbe3; */ /*blue green*/
+  background-image: url(../images/annie-spratt-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding-bottom: 100px;
+}
+.Education p {
+  width: 60%;
+}
+
+/*Contact Info
+-----------------------------------7*/
+footer {
+  background: #E2EDCF;
+  color: #080708;
+
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+
+/*Responsive
+-----------------------------------7*/
+@media screen and (min-width: 750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
